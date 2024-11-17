@@ -178,12 +178,11 @@ header {
     background-color: #F0EEFF;
 }
 
-.sections {
-    background-color: #F0EEFF;
-}
+
 
 .content3 {
     width: 1270px;
+
     margin: 0 auto;
 }
 
@@ -195,4 +194,57 @@ header {
     font-weight: 600;
     text-align: center;
     text-transform: uppercase;
+}
+
+#map {
+    
+    height: calc(100vh - 100px); /* Высота карты, за вычетом высоты блока с формой */
+    margin-bottom: 10px;
+
+}
+
+#map #inputs {
+    position: absolute;
+    top: 3800px;
+    left: 10px;
+    z-index: 38--;
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень для блока */
+}
+
+#inputs input[type="text"],
+#inputs select {
+    width: calc(50% - 10px); /* Ширина полей ввода и селекта */
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box; /* Учитываем padding в ширине */
+}
+
+#inputs button {
+    padding: 8px 15px;
+    background-color: #4CAF50; /* Зелёная кнопка */
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#inputs button:hover {
+    background-color: #45a049; /* Более тёмный зелёный при наведении */
+}
+
+#routeInfo {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    z-index: 100;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
 }
