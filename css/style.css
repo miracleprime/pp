@@ -9,55 +9,63 @@ body {
 }
 
 header {
+    position: fixed; /* Make the header fixed */
+    top: 0; /* Position it at the top of the viewport */
+    left: 0;
+    width: 100%; /* Full width */
+    z-index: 1000; /* Ensure it's on top of other content */
     background-color: #877ec7;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .header1 {
     display: flex;
-    width: 1270px;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1270px;
     margin: 0 auto;
-    padding: 20px  40px;
+    padding: 0 20px;
 }
 
 .main-header {
     display: flex;
-    width: 1226px;
 }
 
-.main-header .navigation {
+.navigation {
     display: flex;
-    padding: 0;
-    margin: 0;
     list-style: none;
-    align-items: flex-end; 
-  }
+    margin: 0;
+    padding: 0;
+}
 
 .navigationItem {
-    margin-right: 30px;
-}
-
-.navigationItem:last-child {
-    margin-right: 0;
+    margin-right: 20px;
 }
 
 .navigationItem a {
-    font: 16px/26px;
-    color: #163152;
     text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
 }
 
 .navigationItem a:hover {
     color: #163152;
 }
 
-.navigationItem a:active {
-    color: #163152;
-    text-decoration: underline;
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .header1 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navigationItem {
+        margin: 10px 0;
+        margin-right: 0;
+    }
 }
-.navigationItem a:focus {
-    color: #163152;
-}
-
 .headerMain {
   width: 1270px;
   margin: 0 auto;
@@ -180,13 +188,13 @@ header {
 
 
 
-.content3 {
+.interactiveMap {
     width: 1270px;
 
     margin: 0 auto;
 }
 
-.content3 h2 {
+.interactiveMap h2 {
     margin: 0;
     padding: 100px 0 60px;
     font-size: 34px;
@@ -247,4 +255,11 @@ header {
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     font-weight: bold;
+}
+#categorySelect {
+    padding: 1px 12px;
+    border: 1px solid rgba(196, 14, 50, 0.8);
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: inherit; /* Inherit font from parent element */
 }

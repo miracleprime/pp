@@ -8,16 +8,17 @@
     <link rel="stylesheet" href="style.css">
     <title>Екатеринбург</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=7f745846-9f76-4d5a-b4be-85b07ef2c70c&lang=ru_RU" type="text/javascript"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=a7a36b57-81ab-4f4e-81dd-cb7febb9a3b4&lang=ru_RU" type="text/javascript"></script>
     <script src="https://yandex.st/jquery/2.2.3/jquery.min.js"></script>
 </head>
 <body>
     <header>
-        <div class="header1">
+        <div class="header1" id="header1">
             <nav class="main-header">
                 <ul class="navigation">
-                    <li class="navigationItem"> <a href="#">Галерея</a></li>
-                    <li class="navigationItem"> <a href="#">Карта</a></li>
+                    <li class="navigationItem"><a href="#gallerySection">Галерея</a></li>
+                    <li class="navigationItem"><a href="#mapSection">Карта</a></li>
+                    <li class="navigationItem"><a href="#header1">В начало</a></li>
                 </ul>
             </nav>
         </div>
@@ -57,7 +58,7 @@
                 <img src="img/event-03.jpg" alt="ивент 3" width="610" height="260">
             </div>
         </section>
-        <section class="gallery">
+        <section class="gallery" id="gallerySection">
             <h2>Галерея</h2>
             <div class="photos">
                 <img class="active-img" src="img/gallery photo 1.jpg" alt="фото" width="970" height="690">
@@ -80,20 +81,21 @@
                 </ul>
             </div>
         </section>
-        <section class="sections">
-            <div class="content3">
-                <h2>Карата</h2>
+        <section class="sections" id="mapSection">
+            <div class="interactiveMap">
+                <h2>Карта</h2>
+                <div class="categories">
+                    <label for="categorySelect">Категория:</label>
+                    <select id="categorySelect">
+                        <option value="">Все</option>
+                        <option value="entertainment">Развлечения</option>
+                        <option value="historical">Исторические объекты</option>
+                        <option value="none">Ничего</option>
+                    </select>
                 <div id="map"></div>
-<div id="routeInfo"></div>
-<div id="inputs">
-    <input type="text" id="from" placeholder="Откуда? (Адрес или координаты)">
-    <input type="text" id="to" placeholder="Куда? (Адрес или координаты)">
-    <select id="transportType">
-        <option value="auto">Автомобиль</option>
-        <option value="pedestrian">Пешком</option>
-    </select>
-    <button id="buildRoute">Построить маршрут</button>
-</div>
+                
+                </div>
+            </section>
     <script src="js/script.js"></script>
 </body>
 </html>
