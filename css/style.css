@@ -9,11 +9,11 @@ body {
 }
 
 header {
-    position: fixed; /* Make the header fixed */
-    top: 0; /* Position it at the top of the viewport */
+    position: fixed; 
+    top: 0; 
     left: 0;
-    width: 100%; /* Full width */
-    z-index: 1000; /* Ensure it's on top of other content */
+    width: 100%;
+    z-index: 1000; 
     background-color: #877ec7;
     padding: 10px 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -55,7 +55,6 @@ header {
     color: #163152;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
     .header1 {
         flex-direction: column;
@@ -206,7 +205,7 @@ header {
 
 #map {
     
-    height: calc(100vh - 100px); /* Высота карты, за вычетом высоты блока с формой */
+    height: calc(100vh - 100px);
     margin-bottom: 10px;
 
 }
@@ -224,17 +223,17 @@ header {
 
 #inputs input[type="text"],
 #inputs select {
-    width: calc(50% - 10px); /* Ширина полей ввода и селекта */
+    width: calc(50% - 10px); 
     padding: 8px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 3px;
-    box-sizing: border-box; /* Учитываем padding в ширине */
+    box-sizing: border-box; 
 }
 
 #inputs button {
     padding: 8px 15px;
-    background-color: #4CAF50; /* Зелёная кнопка */
+    background-color: #4CAF50; 
     color: white;
     border: none;
     border-radius: 3px;
@@ -242,7 +241,7 @@ header {
 }
 
 #inputs button:hover {
-    background-color: #45a049; /* Более тёмный зелёный при наведении */
+    background-color: #45a049;
 }
 
 #routeInfo {
@@ -261,5 +260,5 @@ header {
     border: 1px solid rgba(196, 14, 50, 0.8);
     border-radius: 4px;
     font-size: 16px;
-    font-family: inherit; /* Inherit font from parent element */
+    font-family: inherit; 
 }
