@@ -174,7 +174,7 @@ header {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(219, 232, 236, 0.67);
+    background-color: rgba(59, 148, 175, 0.67);
 }
 
 .set-photos img {
@@ -218,7 +218,7 @@ header {
     background-color: white;
     padding: 15px;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень для блока */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 #inputs input[type="text"],
@@ -238,10 +238,6 @@ header {
     border: none;
     border-radius: 3px;
     cursor: pointer;
-}
-
-#inputs button:hover {
-    background-color: #45a049;
 }
 
 #routeInfo {

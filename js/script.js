@@ -89,11 +89,33 @@ let poiData = {
     ],
     historical: [
         {
+            name: "Доходный дом купца Е.И. Первушина, 1906 год",
+            coordinates: [56.830977887392116,60.60061952244435],
+            description: "В 1906 году в Екатеринбурге по проекту архитектора Павла Заруцкого был построен доходный дом для семьи Первушиных, известных мукомолов. Здание, инвестиционный проект богатой семьи, сразу после постройки заняли Екатеринбургское казначейство, уездный суд.",
+            photo: "img/dom 1906.jpg" 
+        },
+
+        {
+            name: "Усадьба Расторгуева-Харитонова",
+            coordinates: [56.84560648118366,60.611067990518734],
+            description: "Уса́дьба Расторгу́евых — Харито́новых — один из наиболее ценных архитектурных усадебно-парковых ансамблей в Екатеринбурге, памятник архитектуры федерального значения.",
+            photo: "img/ysadba.jpg" 
+        },
+
+        {
+            name: "Дом Н.И. Севастьянова",
+            coordinates: [56.839300379334205,60.60602886444369],
+            description: "Дом Севастья́нова — исторический и архитектурный памятник, расположенный в Екатеринбурге по адресу проспект Ленина, 35. Назван в честь одного из владельцев здания Н. И. Севастьянова. Одна из местных достопримечательностей, архитектура которой особо выделяется среди особняков города.",
+            photo: "img/gallery photo 5.jpg" 
+        },
+
+        {
             name: "Памятник В. Н. Татищеву и Г. В. де Геннину",
             coordinates: [56.8381564594502, 60.60591778512451],
             description: "Памятник В.Н. Татищеву и Г.В. де Геннину в Екатеринбурге увековечивает память основателей города.",
             photo: "img/tatishchev.jpg" 
         },
+
         {
             name: "Ельцин Центр",
             coordinates: [56.84494072330447, 60.591578357987586],
@@ -156,9 +178,9 @@ function init() {
 
      function createPlacemark(poi) {
         return new ymaps.Placemark(poi.coordinates, {
-            balloonContentBody: `<div><h3>${poi.name}</h3><img src="${poi.photo}" style="max-width:100%; max-height:200px;"><p>${poi.description}</p></div>`, // Added image and description
+            balloonContentBody: `<div><h3>${poi.name}</h3><img src="${poi.photo}" style="max-width:100%; max-height:200px;"><p>${poi.description}</p></div>`,
             iconLayout: 'default#image',
-            iconImageHref: 'icon.png', 
+            iconImageHref: 'img/icon.png', 
             iconImageSize: [30, 42],
             iconImageOffset: [-15, -42]
         });
